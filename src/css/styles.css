@@ -113,3 +113,37 @@ body {
     color: transparent;
   }
 }
+
+.social {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social .list-inline-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.social .list-inline-item i {
+  font-size: 1.2rem;
+}
+ul.list-inline {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+li.list-inline-item {
+  display: inline;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: var(--font-white);
+}
+
+a:hover {
+  color: var(--font-red);
+}
