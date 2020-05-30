@@ -28,15 +28,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://kit.fontawesome.com/f47c210cc9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <script lang="javascript">
+    function elementLoaded(element) {
+      element.classList.add('show');
+    }
+  </script>
 </head>
 
 <body>
   <div class="container dark-theme">
-    <div class="bg slider1"></div>
-    <div class="bg slider2"></div>
+    <div class="bg-container">
+      <div class="bg slider1"></div>
+      <div class="bg slider2"></div>
+    </div>
     <div class="hero-container">
       <div class="hero-content">
-        <img src="assets/img/me.png" alt="Leonardo Rossi" class="hero-img-thumbnail" />
+        <img src="assets/img/me.png" onload="elementLoaded(this)" alt="Leonardo Rossi" class="hero-img-thumbnail" />
         <div class="hero-text">
           <h3 class="name">I'm Leonardo Rossi</h3>
           <h1 class="stack">
