@@ -33,14 +33,30 @@
     function elementLoaded(element) {
       element.classList.add('show');
     }
+
+    function changeTheme() {
+      var darkThemeName = 'dark-theme';
+      var container = document.getElementsByClassName('general-container')[0];
+      if (container.classList.contains(darkThemeName)) {
+        container.classList.remove(darkThemeName);
+      } else {
+        container.classList.add(darkThemeName);
+      }
+    }
   </script>
 </head>
 
 <body>
-  <div class="container dark-theme">
+  <div class="container general-container dark-theme">
     <div class="bg-container">
       <div class="bg slider1"></div>
       <div class="bg slider2"></div>
+    </div>
+    <div class="action-theme-container">
+      <button class="btn-transparent" onclick="changeTheme()">
+        <i class="far fa-moon i-dark"></i>
+        <i class="far fa-lightbulb i-light"></i>
+      </button>
     </div>
     <div class="hero-container">
       <div class="hero-content">
@@ -48,7 +64,7 @@
         <div class="hero-text">
           <h3 class="name">I'm Leonardo Rossi</h3>
           <h1 class="stack">
-            <span class="red-color">A</span>
+            <span class="alt-text">A</span>
             <span class="txt-rotate knowledge" data-period="2000"
               data-rotate='[ "Systems Engineer.", "Technical Leader.", "Full Stack Developer."]'></span>
             <span class="typed-cursor">|</span>
