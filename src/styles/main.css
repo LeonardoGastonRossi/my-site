@@ -89,12 +89,12 @@ body {
 }
 
 .bg.slider1 {
-  background-image: url('images/slider-1.jpg');
+  background-image: url('../assets/images/slider-1.jpg');
   animation: 14s bg-animation infinite;
 }
 
 .bg.slider2 {
-  background-image: url('images/slider-2.jpg');
+  background-image: url('../assets/images/slider-2.jpg');
   animation: 14s bg-animation 7s infinite;
 }
 
